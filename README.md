@@ -30,8 +30,8 @@ Usage
 Run the program by providing a URL as an argument:
 
 python main.py 
-it will ask for url
-type the url
+It will ask for url
+Type the url
 I gave reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
 
 The program will download the text content of the URL and save it to a file named output.txt in the same directory.
@@ -42,7 +42,9 @@ Examples
 Download content from a Reddit page:
 
 
-python web_scraper.py https://www.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
+python main.py 
+It will prompt URL:
+Then type your URL as:  https://www.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
 
 Export Conda Environment
 To export the Conda environment to a YAML file:
