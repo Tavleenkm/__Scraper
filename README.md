@@ -54,5 +54,9 @@ conda env export --name my_project_env > requirements.yaml
 Contributing:
 If you'd like to contribute to this project, please open an issue or submit a pull request on GitHub.
 
+## License
+
+This project is licensed under the MIT License.
+
 
 
