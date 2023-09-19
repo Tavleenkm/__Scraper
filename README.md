@@ -26,7 +26,7 @@ Install the required libraries:
 
 pip install requests beautifulsoup4
 
-Usage
+Usage:
 Run the program by providing a URL as an argument:
 
 python main.py 
@@ -38,7 +38,7 @@ The program will download the text content of the URL and save it to a file name
 
 Example output.txt file is added. 
 
-Examples
+Examples:
 Download content from a Reddit page:
 
 
@@ -46,12 +46,12 @@ python main.py
 It will prompt URL:
 Then type your URL as:  https://www.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
 
-Export Conda Environment
+Export Conda Environment:
 To export the Conda environment to a YAML file:
 
 conda env export --name my_project_env > requirements.yaml
 
-Contributing
+Contributing:
 If you'd like to contribute to this project, please open an issue or submit a pull request on GitHub.
 
 
