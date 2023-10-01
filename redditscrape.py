@@ -1,21 +1,43 @@
+# redditscrape.py
+
+import praw
 import requests
-from urllib.parse import urlparse
+from bs4 import BeautifulSoup
+import config
 
-def download_html_from_url(url):
-    # Add 'https://' prefix if missing
-    if not urlparse(url).scheme:
-        url = 'https://' + url
-
-    # Add 'www' prefix if missing
-    parsed_url = urlparse(url)
-    if not parsed_url.netloc.startswith('www.'):
-        url = parsed_url.scheme + '://www.' + parsed_url.netloc + parsed_url.path
+def download_and_save_reddit_html(url):
+    # Initialize a Reddit API instance
+    reddit = praw.Reddit(
+        client_id=config.REDDIT_CLIENT_ID,
+        client_secret=config.REDDIT_CLIENT_SECRET,
+        username=config.REDDIT_USERNAME,
+        password=config.REDDIT_PASSWORD,
+        user_agent="my_bot",
+    )
 
     try:
-        response = requests.get(url)
-        response.raise_for_status()
+        submission = reddit.submission(url=url)
 
-        return response.text
+        # Get the post's HTML content
+        post_url = f"https://www.reddit.com{submission.permalink}"
+        post_response = requests.get(post_url)
+        post_html = post_response.text
+
+        # Extract HTML content of comments
+        comments_htmls = []
+        comments = submission.comments.list()
+        for comment in comments:
+            if isinstance(comment, praw.models.Comment):
+                comments_htmls.append(comment.body_html)
+
+        # Combine post content and comments' HTML
+        reddit_html = post_html + "\n\n" + "\n\n".join(comments_htmls)
+
+        return reddit_html
+
     except Exception as e:
         print(f"Error: {e}")
         return None
+
+
+    

@@ -1,13 +1,13 @@
-import os
-from redditscrape import download_html_from_url
+# main.py
+
+import redditscrape
 
 if __name__ == "__main__":
-    url = input("Enter the URL: ").strip()  # Prompt for the URL input
-    html_content = download_html_from_url(url)
+    url = input("Enter the Reddit URL: ").strip()
+    reddit_html = redditscrape.download_and_save_reddit_html(url)
 
-    if html_content is not None:
-        # Save the raw HTML content to a text file
+    if reddit_html is not None:
         with open('output.txt', 'w', encoding='utf-8') as file:
-            file.write(html_content)
+            file.write(reddit_html)
 
-        print("HTML content downloaded and saved to 'output.txt'")
+        print("Reddit HTML content downloaded and saved to 'output.txt'")

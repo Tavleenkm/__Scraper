@@ -1,0 +1,6 @@
+# config.py
+
+REDDIT_CLIENT_ID = "sBEt4ZZ9qpKFoeUvIaN_9w"
+REDDIT_CLIENT_SECRET = "Oibpq4nEnchddxKxA5l3RVNWJM2rDA"
+REDDIT_USERNAME = "TavleenMashiana"
+REDDIT_PASSWORD = "Tabu5853"
