@@ -24,7 +24,7 @@ To use this program, follow these steps:
 conda env create -f requirements.yaml
 
 3.In the project directory, locate and open the config.py file. Add your Reddit API credentials (client ID, client secret, username, and password) to the file:
-# config.py
+## config.py
 REDDIT_CLIENT_ID = "your_client_id"
 REDDIT_CLIENT_SECRET = "your_client_secret"
 REDDIT_USERNAME = "your_username"
@@ -39,10 +39,10 @@ https://www.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on
 
 6. The program will scrape the HTML content of the Reddit post and comments and save it to a text file named output.txt in the project directory.
 
-#Author:
+## Author:
 Tavleen Kaur
 
-#License:
+## License:
 This project is licensed under the MIT License.
 
 This README provides instructions for setting up and running your Reddit text content scraper project.
