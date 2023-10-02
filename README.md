@@ -23,12 +23,13 @@ To use this program, follow these steps:
 2. create a Conda environment and install the required packages from requirements.yaml:
 conda env create -f requirements.yaml
 
-3.In the project directory, locate and open the config.py file. Add your Reddit API credentials (client ID, client secret, username, and password) to the file:
+3.In the project directory, locate and open the config.py file. Add your Reddit API credentials
+(client ID, client secret, username, and password) to the file:
 In config.py
-REDDIT_CLIENT_ID = "your_client_id"
-REDDIT_CLIENT_SECRET = "your_client_secret"
-REDDIT_USERNAME = "your_username"
-REDDIT_PASSWORD = "your_password"
+- REDDIT_CLIENT_ID = "your_client_id"
+- REDDIT_CLIENT_SECRET = "your_client_secret"
+- REDDIT_USERNAME = "your_username"
+- REDDIT_PASSWORD = "your_password"
 
 4. Run the main program by executing main.py in your command line or terminal:
 python main.py
