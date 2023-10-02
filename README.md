@@ -39,6 +39,9 @@ https://www.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on
 
 6. The program will scrape the HTML content of the Reddit post and comments and save it to a text file named output.txt in the project directory.
 
+## Extracting Comments
+To extract comments from the output.txt file, the extractcomments.py script uses regular expressions to match comment patterns. If the comments are found, they are saved to the comments.txt file.
+
 ## Author:
 Tavleen Kaur
 
