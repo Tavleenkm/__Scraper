@@ -1,9 +1,15 @@
 # redditscrape.py
 
+# This module provides functions to download and save Reddit HTML content.
+
+# Input: Reddit URL
+# Output: HTML content of the Reddit post and comments
+# Working: Initializes a Reddit API instance, retrieves the HTML content, and combines it with comments.
+
 import praw
 import requests
 from bs4 import BeautifulSoup
-import config
+import Config.config as config
 
 def download_and_save_reddit_html(url):
     # Initialize a Reddit API instance
@@ -38,6 +44,3 @@ def download_and_save_reddit_html(url):
     except Exception as e:
         print(f"Error: {e}")
         return None
-
-
-    
