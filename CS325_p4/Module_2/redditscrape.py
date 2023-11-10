@@ -9,7 +9,7 @@
 import praw
 import requests
 from bs4 import BeautifulSoup
-import Config.config as config
+import Module_1.config as config
 
 def download_and_save_reddit_html(url):
     # Initialize a Reddit API instance
