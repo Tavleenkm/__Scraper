@@ -11,42 +11,34 @@ Before running the program, ensure you have the following prerequisites installe
 
 ## Usage
 
-### Clone the Repository
+### 1. Clone the Repository
 
 Clone this GitHub repository to your local machine:
 
 git clone https://github.com/Tavleenkm/__Scraper
 
-
+2. Set Up Environment
 Create a Conda environment and install the required packages from requirements.yaml:
 conda env create -f requirements.yaml
 
-In the project directory, locate and open the config.py file. Add your Reddit API credentials (client ID, client secret, username, and password) to the file: In config.py
+3. Add Reddit API Credentials
+In the project directory, locate and open the config.py file. Add your Reddit API credentials (client ID, client secret, username, and password) to the file:
 
+# In config.py
 REDDIT_CLIENT_ID = "your_client_id"
 REDDIT_CLIENT_SECRET = "your_client_secret"
 REDDIT_USERNAME = "your_username"
 REDDIT_PASSWORD = "your_password"
+4. Run the Main Program
+Execute main.py in your command line or terminal:
 
-Run the main program by executing main.py in your command line or terminal: python main.py
+python run.py
+Enter the Reddit URL when prompted. Example URL: https://old.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
 
-Enter the Reddit URL when prompted. I used: https://old.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
+The program will scrape the HTML content of the Reddit post and comments, saving it to a text file named output.txt in the project directory.
 
-The program will scrape the HTML content of the Reddit post and comments and save it to a text file named output.txt in the project directory.
-
-Extracting Comments
-To extract comments from the output.txt file, the extractcomments.py script uses regular expressions to match comment patterns. If the comments are found, they are saved to the comments.txt file.
-
-Sentiment Analysis
-Generate your OpenAI API key and update the api_key in the Config/config.py file.
-
-Install the OpenAI Python package:
-
-pip install openai==0.28
-Run the sentiment analysis script by executing analysis.py:
-
-python analysis.py
-The sentiment analysis results will be saved to a CSV file in the Data/Sentiments directory.
+5. Extract Comments and Perform Sentiment Analysis
+Comment extraction and sentiment analysis will be automatically triggered after scraping the Reddit content.
 
 Authors
 Tavleen Kaur
@@ -54,3 +46,6 @@ Chen Yang
 
 License
 This project is licensed under the MIT License.
+
+
+This README includes the instructions for cloning the repository, setting up the environment, adding Reddit API credentials, running the main program, and the automatic execution of comment extraction and sentiment analysis. 
