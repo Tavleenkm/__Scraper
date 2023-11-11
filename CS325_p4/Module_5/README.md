@@ -7,9 +7,7 @@ This Python program allows you to scrape HTML content from a Reddit post and its
 Before running the program, ensure you have the following prerequisites installed:
 
 - Python 3.7 or higher
-- Conda (for managing the environment, optional)
-
-## Usage
+- Conda 
 
 ## Clone the Repository
 
