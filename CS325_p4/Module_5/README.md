@@ -44,6 +44,7 @@ Comment extraction and sentiment analysis will be automatically triggered after 
 ## Authors:
 
 Tavleen Kaur
+
 Chen Yang
 
 ## License
