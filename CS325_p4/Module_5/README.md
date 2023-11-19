@@ -33,10 +33,7 @@ Execute main.py in your command line or terminal:
 
 python run.py
 
-Enter the Reddit URL when prompted. Example URL: https://old.reddit.com/r/travel/comments/15hf4vr/egypt_changed_my_perspective_on_travel/
-
-The program will scrape the HTML content of the Reddit post and comments, saving it to a text file named output.txt in the project directory.
-
+The program will access the 'urls.txt' file, scrape the HTML content of all the Reddit posts and their comments from the provided URLs, and save the information to a text file named 'output.txt' in the project directory.
 
 ## Extract Comments and Perform Sentiment Analysis
 Comment extraction and sentiment analysis will be automatically triggered after scraping the Reddit content.
