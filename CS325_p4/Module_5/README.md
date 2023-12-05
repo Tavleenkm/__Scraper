@@ -9,6 +9,11 @@ Before running the program, ensure you have the following prerequisites installe
 - Python 3.7 or higher
 - Conda 
 
+Additionally, the following Python libraries are required and will be installed automatically when creating the Conda environment:
+
+- Pandas
+- Matplotlib
+
 ## Clone the Repository
 
 Clone this GitHub repository to your local machine:
