@@ -64,8 +64,6 @@ The program will create plots based on sentiment analysis data and save them in 
 
 Tavleen Kaur
 
-Chen Yang
-
 ## License
 
 This project is licensed under the MIT License.
