@@ -50,6 +50,3 @@ def perform_sentiment_analysis(comments_file_path):
 
     except Exception as e:
         print(f"An error occurred: {e}")
-
-# Remove the following line if you want to keep the original function
-# perform_sentiment_analysis()
